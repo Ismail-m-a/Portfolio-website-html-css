@@ -54,3 +54,26 @@ body{
     padding-top: 10px;
     border-radius: 90px;
 }
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 40px;
+    margin-top: 90px;
+    position: relative;
+}
+.text{
+    position: relative;
+    top: -60px;
+}
+.content p{
+    margin: 20 px auto;
+    font-weight: 100px;
+    line-height: 25px;
+}
