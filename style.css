@@ -5,6 +5,7 @@
 }
 body{
     font-family: montserrat;
+    
 }
 .container{
     width: 100%;
@@ -15,35 +16,58 @@ body{
     background-position: center;
 }
 .navbar{
-    background: #413b3b;
+    width: 100%; /* behöver ingen padding, en så länge */
     height: 80px;
-    width: 100%;
+    margin: auto;
+    display: flex;
+    background: #0082e6;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo{
-    width: 100px;
+    width: 97px;
+    position: relative;
+    transform: translateX(20px);/* Logo bild flytta lite höger */
+    border-radius: 15px;
 }
 
-.navbar ul{
+.navbar ul {
     float: right;
     margin-right: 20px;
 }
 
 
-.navbar li{
+.navbar ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 15px;
 }
 
 .navbar ul li a{
+    position: relative;
     color: white;
-    font-size: 17px;
-    padding: 7px 13px;
+    font-size: 18px;
+    padding: 5px 10px;
     text-transform: uppercase;
     text-decoration: none;
+}
+.navbar ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+
+}
+a:hover{
+    opacity: 1;
 }
 .bild img{
     width: 200px;
@@ -76,4 +100,37 @@ body{
     margin: 20 px auto;
     font-weight: 100px;
     line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0a0096;
+    background: transparent;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+span{
+    background: green;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
 }
