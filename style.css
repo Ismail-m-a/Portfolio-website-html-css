@@ -76,6 +76,7 @@ a:hover{
     padding-top: 10px;
     border-radius: 90px;
     transform: translateY(-20px);
+    cursor: pointer;
 }
 .content{
     width: 100%;
