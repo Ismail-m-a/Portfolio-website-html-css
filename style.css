@@ -3,10 +3,7 @@
     padding: 0;
     font-family: sans-serif;
 }
-body{
-    font-family: montserrat;
-    
-}
+
 .container{
     width: 100%;
     height: 100vh;
@@ -27,6 +24,7 @@ body{
 
 .logo{
     width: 97px;
+    cursor: pointer;
     position: relative;
     transform: translateX(20px);/* Logo bild flytta lite höger */
     border-radius: 15px;
@@ -77,30 +75,41 @@ a:hover{
     margin-right: auto;
     padding-top: 10px;
     border-radius: 90px;
+    transform: translateY(-20px);
 }
 .content{
     width: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    align-items: center;
+    transform: translateY(-60%);
     text-align: center;
     color: white;
 }
 .content h1{
     font-size: 40px;
     margin-top: 90px;
-    position: relative;
+    
 }
-.text{
-    position: relative;
-    top: -60px;
-}
+
 .content p{
-    margin: 20 px auto;
+    margin: 20px auto;
     font-weight: 100px;
     line-height: 25px;
 }
+.text{
+    transform: translateY(-50%);
+}
+
+.content2{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(150%);
+    text-align: center;
+    color: white;
+}
+
+
 button{
     width: 200px;
     padding: 15px 0;
@@ -108,12 +117,12 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #0a0096;
+    border: 2px solid #0082e6;
     background: transparent;
     position: relative;
     color: white;
     cursor: pointer;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 span{
@@ -131,6 +140,7 @@ span{
 button:hover span{
     width: 100%;
 }
-button:hover{
+button:hover span{
     border: none;
+    
 }
