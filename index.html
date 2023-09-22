@@ -19,9 +19,9 @@
                 <li><a href="kontakt-form.html">Kontakt</a></li>
             </ul>
             <div class="menu-toggle" id="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <div class="ham"></div>
+                <div class="ham"></div>
+                <div class="ham"></div>
             </div>
         </div>
         
@@ -40,7 +40,7 @@
             <a href="CV_Mall_Eng_2023.pdf">LADDA NER CV</a>
         </div>
 
-        <div id="follow"><p>Follow or like me on Facebook, LinkedIn and Twitter</p></div>
+        <div id="follow"><p>Följ eller gilla mig på Facebook, LinkedIn och Twitter</p></div>
 
         
         <footer>
@@ -54,6 +54,16 @@
         </footer>
         
     </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuList = document.getElementById('menu');
+    
+        menuToggle.addEventListener('click', () => {
+            menuList.classList.toggle('active');
+        });
+    </script>
+    
     
     
 

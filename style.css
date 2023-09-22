@@ -161,7 +161,7 @@ footer {
     text-align: center;
     padding: 0 3px;
     color: white;
-    background: #313a40;;
+    background: #313a40;
     position: sticky;
 }
 #follow p{
@@ -187,6 +187,7 @@ footer {
 
     .navbar ul.active {
         display: flex; /* visar meny när den är active */
+        background: #313a40; /* hamburger menu färg när man clickar */
     }
 
     .navbar ul li {
@@ -203,7 +204,7 @@ footer {
         margin-right: 20px;
     }
 
-    .bar {
+    .ham {
         width: 30px;
         height: 3px;
         background-color: #fff;
