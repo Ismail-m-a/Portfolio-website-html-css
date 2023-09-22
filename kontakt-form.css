@@ -18,7 +18,7 @@ h4{
     margin-top: 40px;
     margin-right: 160px;
     text-align: center;
-    font-size: bold;
+    font-size: 17px;
 }
 .container{
     max-width: 600px;
@@ -32,7 +32,7 @@ form{
     gap: 10px;
 }
 label{
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 /* formulär man fylla med personlig info*/
