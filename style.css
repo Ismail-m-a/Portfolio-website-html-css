@@ -198,8 +198,12 @@ footer {
         font-size: 16px;
     }
 
+    /* stil när man clickar hamburger menu, används lite javaskricpt */
+    .menu_lista{
+        display: none;
+    }
     .menu-toggle {
-        display: block; /* Visar hamburger menu */
+        display: block; /* Visar hamburger menu block list*/
         cursor: pointer;
         margin-right: 20px;
     }
@@ -212,16 +216,15 @@ footer {
         transition: 0.4s;
     }
 
-    /* stil när det öppnas hamburger menu med javaskricpt */
-    .menu-opened .bar:nth-child(1) {
+    .menu-toggle.opened .ham:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
 
-    .menu-opened .bar:nth-child(2) {
+    .menu-toggle.opened .ham:nth-child(2) {
         opacity: 0;
     }
 
-    .menu-opened .bar:nth-child(3) {
+    .menu-toggle.opened .ham:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
     .social {
